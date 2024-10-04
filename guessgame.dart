@@ -31,7 +31,7 @@ void main() {
     // resetGame();
     extreme();
   } else if (difficultyInput == "5") {
-    return;
+    exit(0);
   }
 }
 
@@ -80,7 +80,7 @@ void medium () {
   int numberToGuess = random.nextInt(100) + 1;
   int? guess;
   int attempts = 0;
-  print("You have chosen the Medium Difficulty. Good luck!");
+  print("You have chosen the Medium Difficulty. remember you only have 20 attempts! Good luck!");
   print("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
   print('I have selected a number between 1 and 100. Can you guess it?');
 while (attempts <= 20) {
@@ -140,7 +140,7 @@ void hard () {
   int numberToGuess = random.nextInt(100) + 1;
   int? guess;
   int attempts = 0;
-  print("You have chosen the Hard Difficulty, sorry not sorry.. no hints this time!");
+  print("You have chosen the Hard Difficulty, you have 10 guesses and no hints this time! sorry not sorry..");
   print("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
   print('I have selected a number between 1 and 100. Can you guess it?');
 while (attempts <= 10) {
@@ -230,10 +230,10 @@ void playAgain() {
   String? yesNo = stdin.readLineSync();
 
   if(yesNo == "yes" || yesNo == "Yes") {
-    main2();
+    restartGame();
     break;
   } else if (yesNo == "no" || yesNo == "No"){
-    return;
+    exit(0);
   } else {
     print("Invalid input, type 'yes' to play again or 'no' to exit the game");
   }
@@ -243,7 +243,7 @@ void playAgain() {
 
 
 // Notum þetta fyrir þá sem eru búnir að spila allavega einu sinni og vilja spila aftur
-void main2() {
+void restartGame() {
   print("Welcome back!");
   print("Pick a difficulty that suits you. Have fun!");
   print("1. Easy Difficulty: Unlimited attempts with helpful hints after each guess.");
@@ -263,6 +263,6 @@ void main2() {
   } else if (difficultyInput == "4") {
     extreme();
   } else if (difficultyInput == "5") {
-    return;
+    exit(0);
   }
 }
