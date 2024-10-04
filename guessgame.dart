@@ -58,6 +58,7 @@ while (true) {
   
     if (guess != numberToGuess) {
     print("This is attempt number $attempts |||||||||||| $guess is not the right number try again!");
+    print("----------------------------------------------------------------------------------------");
     if (numberToGuess > guess!) {
       print("The number I picked is greater than $guess");
     } else if (numberToGuess < guess!) {
@@ -108,6 +109,7 @@ while (attempts <= 20) {
     
     if (attempts < 20 && guess != numberToGuess) {
     print("This is attempt number $attempts |||||||||||| $guess is not the right number try again!");
+    print("----------------------------------------------------------------------------------------");
     if (numberToGuess > guess!) {
       print("The number I picked is greater than $guess");
     } else if (numberToGuess < guess!) {
@@ -142,11 +144,11 @@ void hard () {
   print("---------------------------------------------------");
   print('I have selected a number between 1 and 100. Can you guess it?');
 while (attempts <= 10) {
-  if (attempts == 17) {
+  if (attempts == 7) {
     print("-------------------------------------------------------------------------");
     print("You have 3 guesses left!");
   } 
-  if (attempts == 19) {
+  if (attempts == 9) {
     print("-------------------------------------------------------------------------");
     print("This is your last guess! Make it count!");
   }
@@ -167,6 +169,7 @@ while (attempts <= 10) {
     
     if (attempts < 10 && guess != numberToGuess) {
     print("This is attempt number $attempts |||||||||||| $guess is not the right number try again!");
+    print("----------------------------------------------------------------------------------------");
     }
     if(guess == numberToGuess) {
       if (attempts == 10) {
