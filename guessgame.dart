@@ -138,7 +138,7 @@ void hard () {
   int numberToGuess = random.nextInt(100) + 1;
   int? guess;
   int attempts = 0;
-  print("You have chosen the Hard Difficulty. Heroic I must say!");
+  print("You have chosen the Hard Difficulty, sorry not sorry.. no hints this time!");
   print("---------------------------------------------------");
   print('I have selected a number between 1 and 100. Can you guess it?');
 while (attempts <= 10) {
@@ -193,7 +193,7 @@ void extreme () {
   int numberToGuess = random.nextInt(100) + 1;
   int? guess;
   int attempts = 0;
-  print("Welcome to the Extreme Difficulty!");
+  print("You have chosen the Extreme Difficulty, You have one attempt! You are really gonna be needing luck on your side for this one");
   print("I believe in you... not");
   print('I have selected a number between 1 and 100. Can you guess it?');
 while (attempts < 2) {
@@ -250,15 +250,12 @@ void main2() {
 
   if(difficultyInput == "1") {
     easy();
-    print("You have chosen the Easy Difficulty, have fun!");
   } else if (difficultyInput == "2") {
     medium();
   } else if (difficultyInput == "3") {
     hard();
-    print("You have chosen the Hard Difficulty, sorry not sorry.. no hints this time!");
   } else if (difficultyInput == "4") {
     extreme();
-    print("You have chosen the Extreme Difficulty, You have one attempt! You are really gonna be needing luck on your side for this one");
   } else if (difficultyInput == "5") {
     return;
   }
