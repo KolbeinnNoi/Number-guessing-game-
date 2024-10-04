@@ -35,6 +35,8 @@ void main() {
   }
 }
 
+// Ég ákvað að halda þessu hérna bara til að sýna að ég reyndi að nota global variables fyrst en gafst síðan upp á því
+// leikurinn resettaðist aldrei almennilega
 // void resetGame() {
 //   numberToGuess = random.nextInt(100) + 1;
 //   guess = null;
@@ -214,6 +216,7 @@ while (attempts < 2) {
 }
 }
 
+// Lætur þig geta valið hvort þú viljir spila aftur eða ekki
 void playAgain() {
   print("Would you like to play again ? if so type in yes else type in no");
   
@@ -232,6 +235,8 @@ void playAgain() {
   
 }
 
+
+// Notum þetta fyrir þá sem eru búnir að spila allavega einu sinni og vilja spila aftur
 void main2() {
   print("Welcome back!");
   print("Pick a difficulty that suits you. Have fun!");
